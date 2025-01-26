@@ -11,6 +11,7 @@
     "test": "vitest"
   },
   "dependencies": {
+    "husky": "^9.1.7",
     "mahlzeit-vite": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
