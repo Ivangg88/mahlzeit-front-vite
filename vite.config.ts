@@ -9,6 +9,11 @@ export default defineConfig({
     ...configDefaults,
     environment: "jsdom",
     globals: true,
-    setupFiles: "./setupTests.ts", // Si usas un archivo de configuración
+    setupFiles: "./setupTests.ts",
+    coverage: {
+      include: ["src/**/*"],
+      reporter: ["text", "json", "html"],
+      exclude: ["src/main.tsx"],
+    },
   },
 });
